@@ -12,10 +12,20 @@ int main()
 {
     /* freopen("input","r",stdin); */
     /* freopen("output","w",stdout); */
-    float i=0,j=1;
+    float i=0,j;
+    int n = 3;
     
-    printf("Hello world\n");
-    printf("Hello world\n");
-    printf("Hello world\n");
+    while(i<=2.0){
+        j = 1;
+        while(--n){
+            if(i==0)
+                printf("I=%d J=%d\n",(int)i,(int)j);
+            else
+                printf("I=%.1f J=%.1f",i,j);
+            ++j;
+        }
+        i += .2;
+    }
+
     return 0;
 }
